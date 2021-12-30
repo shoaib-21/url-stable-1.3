@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="#" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Pushster&family=Roboto:wght@100&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" id="web-logo">URL Shortener</a>
+    <div id="options">
+      <a href="#" class="links">Why Us?</a>
+      <a href="#" class="links">Contact Us</a>
+    </div>
+  </header>
+  <section id="content">
+    <div id="main-top">
+      <h1 id="main-heading">Short links, big results</h1>
+      <p id="sub-heading">
+        A URL shortener built with powerful APIs to help you grow and protect
+        your brand. We shortens only safe URLs to prevent Phishing Attacks.
+      </p>
+    </div>
+    <main>
+      <form name="form" id="formId">
+        <input type="url" name="urll" id="url" />
+        <input type="button" value="Short" id="short" />
+      </form>
+      <div class="response">
+        <div class="sub-response">
+          <p class="validity">URL Valid:</p>
+          <p class="safety">URL Safe:</p>
+          <p id="status"></p>
+        </div>
+      </div>
+      <div class="bottom">
+        <p class="bit-link">Shortened URL</p>
+        <div class="result" id="result">
+          <a href="bit.ly/3Ft9OLu" class="sURL"></a>
+          <input type="button" value="COPY" id="copy" onclick="copyURL()" />
+        </div>
+      </div>
+    </main>
+  </section>
+  <p></p>
+  <script src="./index.js"></script>
+</body>
+</html>
